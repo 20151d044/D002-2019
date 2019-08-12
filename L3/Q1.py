@@ -1,16 +1,16 @@
 # D002 Lesson 3
 # Q1:  Warm up exercise
-
+"""
 # a) Go Dutch
 from math import *
-"""
+
 people = int(input("How many people are sharing the bill?\n"))
 bill = float(input("How much is the bill?\n"))
 print("Kevin paid the bill first. But Kevin only has 100 dollar notes")
 print("So Kevin is going to paid $%d." %(ceil(bill/100)*100))   # replace with your code
 print("The cafe is giving %f to Kevin." % ((ceil(bill/100)*100)-bill))  # replace with your code
 print("Each one should give %f to Kevin." % (bill/people)) # replace with your code
-
+"""
 
 # b) Clap at Seven 
 # The purpose of the following program is to print the number from 1 to 100,
@@ -20,14 +20,14 @@ print("Each one should give %f to Kevin." % (bill/people)) # replace with your c
 
 number = 1
 while number <= 100:
-    if number%7 == 0 or  number%10 == 7:   # replace with your code
+    if number%7 == 0 or  number[-1] == 7:   # replace with your code
         print('X', end=' ')
     else:
         print(number, end=' ')    
     number = number + 1
 print("\nGame Over.")
 
-
+"""
 # c) How long it takes?
 # In a Chinese board game the player can start its game only when he can
 # get a 6 in rolling a dice. Please do an experiment to test your luck today
@@ -44,10 +44,13 @@ while number!=6: # replace with your code
     print("I got a %d" % number)
     count = count + 1
     number = randint(1,6)
+if number==6:
+    print("I got a %d" % number)
+    count = count+1
 
 print("Oh, it takes me %d times to get a 6!!!" % count)
 
-"""
+
 # d) How long it takes, in general?
 # Repeat the experiment in part c for 100 times and see what is the average 
 # value of the count would be. This is challenging, isn't it?
@@ -64,9 +67,10 @@ for n in range(0,101):
         number = randint(1,6)
     if number==6:
         x.append(count)
-
-
+        print("value of count=%d"%count)
+        count = 0
+        number = 0
 
         
-print("value of the count would be %d"%x)
-print("the average is %f"%(x/100))
+print("the average is %f"%((sum(x[0:100])/100)))
+"""
