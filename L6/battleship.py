@@ -43,6 +43,8 @@ for c in range (0,2):
 """
 seems working
 but error checking inside setup for input is unseccessful arrrrrrrr QAQ
+gave up on the first two lines
+later solve la
 also haven't finished all the errors
 tmr sin finish during class maybe
 im so sleepy la_zzzzz
@@ -57,15 +59,3 @@ then replace the checked empty cells with +(?) ~easier to count
 (x=have boat,o=nth,+=havent shown)
 then i have no idea what to do next la @_@
 """
-
-    
-
-
-
-
-
-
-
-
-
-
